@@ -13,7 +13,6 @@ data = r.json()
 data = data.replace("\'", "\"")
 data = json.loads(data)
 
-
 # Conversion to table format
 header = data[0].keys()
 rows = [x.values() for x in data]
