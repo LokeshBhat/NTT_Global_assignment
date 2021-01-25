@@ -1,3 +1,5 @@
+"""Task3, API Client"""
+
 import requests
 import tabulate
 import json
