@@ -88,14 +88,14 @@ app = Flask(__name__)
 
 
 # End point to return all blocks
-@app.route('/interface')
+@app.route('/all')
 def index():
     print('\nreturning all blocks')
     return json.dumps(str(new_res_list))
 
 
 # End point to return a particular block
-@app.route('/interface/<interface>/')
+@app.route('/all/<interface>/')
 def spec_interface(interface):
     interface = interface.replace('_', '/')
     print('\nreturning a single block')
